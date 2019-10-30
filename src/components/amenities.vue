@@ -60,8 +60,8 @@
   </div>
 </template>
 
-<script lang="ts" src="@/controllers/amenities.ts"></script>
+<script lang="ts" src="@/controllers/Amenities.ts"></script>
 
 <style lang="scss">
-  @import "@/styles/amenities.scss";
+  @import "@/styles/Amenities.scss";
 </style>

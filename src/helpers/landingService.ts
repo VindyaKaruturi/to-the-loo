@@ -1,5 +1,5 @@
-import { groupBy } from '@/utility/genericUtility';
-import { groupedByLocation, groupedLooList, LooListModel } from '@/models/looListModel';
+import { groupBy } from '@/utility/GenericUtility';
+import { groupedByLocation, groupedLooList, LooListModel } from '@/models/LooListModel';
 
 class LandingService {
   /**

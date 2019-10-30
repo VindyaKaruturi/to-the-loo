@@ -4,5 +4,5 @@
     </div>
 </template>
 <style lang="scss">
-    @import '@/styles/spinner.scss';
+    @import '@/styles/AzjSpinner.scss';
 </style>

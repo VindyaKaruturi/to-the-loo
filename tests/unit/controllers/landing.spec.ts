@@ -6,8 +6,8 @@ import {
 import sinon from 'sinon';
 import Vuex from 'vuex';
 import VueRouter from 'vue-router';
-import Landing from '@/views/looLanding.vue';
-import FetchLooService from '@/services/fetchLooService';
+import Landing from '@/views/LooLanding.vue';
+import FetchLooService from '@/services/FetchLooService';
 
 const localVue = createLocalVue();
 localVue.use(Vuex);

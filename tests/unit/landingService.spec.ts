@@ -1,6 +1,6 @@
 import { expect } from 'chai';
-import LandingService from '@/helpers/landingService';
-import { LooListModel } from '@/models/looListModel';
+import LandingService from '@/helpers/LandingService';
+import { LooListModel } from '@/models/LooListModel';
 
 
 describe('Landing Service', () => {

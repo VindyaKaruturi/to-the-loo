@@ -1,8 +1,8 @@
 import {
   Module, VuexModule, Mutation, Action,
 } from 'vuex-module-decorators';
-import { LooListModel } from '@/models/looListModel';
-import FetchLooService from '@/services/fetchLooService';
+import { LooListModel } from '@/models/LooListModel';
+import FetchLooService from '@/services/FetchLooService';
 
 @Module({
   namespaced: true,

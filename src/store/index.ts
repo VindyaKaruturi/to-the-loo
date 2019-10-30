@@ -1,6 +1,6 @@
 import Vue from 'vue';
 import Vuex from 'vuex';
-import looListModule from '@/store/modules/looListModule';
+import looListModule from '@/store/modules/LooListModule';
 
 Vue.use(Vuex);
 

@@ -9,8 +9,8 @@
     </div>
 </template>
 
-<script lang="ts" src="@/controllers/azjButton.ts"></script>
+<script lang="ts" src="@/controllers/AzjButton.ts"></script>
 
 <style lang="scss">
-    @import '@/styles/azjbutton.scss';
+    @import '@/styles/Azjbutton.scss';
 </style>

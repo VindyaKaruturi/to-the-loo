@@ -1,6 +1,6 @@
 
-import { LooListModel } from '@/models/looListModel';
-import axiosInstance from './axiosInstance';
+import { LooListModel } from '@/models/LooListModel';
+import AxiosInstance from './AxiosInstance';
 
 
 class FetchLooService {
@@ -11,7 +11,7 @@ class FetchLooService {
    */
   public async fetchNearestLoo() : Promise<Array<LooListModel>> {
     try {
-      const response = await axiosInstance.instance.get('loolist.json');
+      const response = await AxiosInstance.instance.get('loolist.json');
       this.looList = response.data.LooList;
     } catch (err) {
       throw (err);

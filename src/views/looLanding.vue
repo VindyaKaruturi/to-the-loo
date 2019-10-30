@@ -55,7 +55,7 @@
                </div>
             </div>
          </div>
-         <div class="mt-1">{{constants.landing.MESSAGE}}</div>
+         <div class="mt-1 pt-2">{{constants.landing.MESSAGE}}</div>
          <azj-button :buttonText="constants.landing.BUTTON_TEXT"
             :isDisabled = "!isActive" :btnClick="showWay">
          </azj-button>
@@ -69,7 +69,7 @@
    </div>
    </div>
 </template>
-<script lang="ts" src="@/controllers/looLanding.ts"></script>
+<script lang="ts" src="@/controllers/LooLanding.ts"></script>
 <style scoped lang="scss">
-   @import '@/styles/looLanding.scss';
+   @import '@/styles/LooLanding.scss';
 </style>

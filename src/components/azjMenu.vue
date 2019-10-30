@@ -55,8 +55,8 @@
     </div>
 </template>
 
-<script lang="ts" src="@/controllers/azjMenu.ts"></script>
+<script lang="ts" src="@/controllers/AzjMenu.ts"></script>
 
 <style lang="scss">
-    @import '@/styles/azjMenu.scss';
+    @import '@/styles/AzjMenu.scss';
 </style>

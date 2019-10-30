@@ -1,13 +1,13 @@
 import { Vue, Component } from 'vue-property-decorator';
-import { UserModel } from '@/models/userModel';
-import Amenities from '@/components/amenities.vue';
-import AzjButton from '@/components/azjButton.vue';
-import AzjSpinner from '@/components/azjSpinner.vue';
-import AzjErrorComponent from '@/components/azjErrorComponent.vue';
-import AzjMenu from '@/components/azjMenu.vue';
-import { LooListModel, groupedLooList, groupedByLocation } from '@/models/looListModel';
-import { groupBy, orderBy } from '@/utility/genericUtility';
-import LandingService from '@/helpers/landingService';
+import { UserModel } from '@/models/UserModel';
+import Amenities from '@/components/Amenities.vue';
+import AzjButton from '@/components/AzjButton.vue';
+import AzjSpinner from '@/components/AzjSpinner.vue';
+import AzjErrorComponent from '@/components/AzjErrorComponent.vue';
+import AzjMenu from '@/components/AzjMenu.vue';
+import { LooListModel, groupedLooList, groupedByLocation } from '@/models/LooListModel';
+import { groupBy, orderBy } from '@/utility/GenericUtility';
+import LandingService from '@/helpers/LandingService';
 import constants from '@/constants';
 
 @Component({
@@ -40,7 +40,7 @@ export default class Landing extends Vue {
   private errorMessage: string = '';
 
   /**
-   * fetch the loo list near to location
+   * fetch the loo list near to the our location
   */
   private async created() {
     this.fetchUserList();

@@ -4,8 +4,8 @@
     </div>
 </template>
 
-<script lang="ts" src="@/controllers/azjErrorComponent.ts"></script>
+<script lang="ts" src="@/controllers/AzjErrorComponent.ts"></script>
 
 <style lang="scss">
-    @import '@/styles/azjErrorComponent.scss';
+    @import '@/styles/AzjErrorComponent.scss';
 </style>

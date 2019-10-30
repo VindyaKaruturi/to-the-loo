@@ -1,7 +1,7 @@
 import { Vue, Component, Prop } from 'vue-property-decorator';
 import Constants from '@/constants';
-import { capitalize } from '@/utility/genericUtility';
-import { groupedLooList } from '@/models/looListModel';
+import { capitalize } from '@/utility/GenericUtility';
+import { groupedLooList } from '@/models/LooListModel';
 
 @Component({
   filters: {

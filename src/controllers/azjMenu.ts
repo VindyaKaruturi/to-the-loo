@@ -1,6 +1,6 @@
 import { Vue, Component, Prop } from 'vue-property-decorator';
 import constants from '@/constants';
-import { UserModel } from '@/models/userModel';
+import { UserModel } from '@/models/UserModel';
 
 @Component
 export default class AzjButton extends Vue {
