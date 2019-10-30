@@ -147,5 +147,6 @@ describe('Landing.vue error flow', () => {
     });
     sinon.stub(FetchLooService, 'fetchNearestLoo').throws('error');
     expect(wrapper.vm.$data.errorMessage).to.eq('Oops..Something went wrong. Please try again after sometime.');
+    (FetchLooService.fetchNearestLoo as any).restore();
   });
 });
