@@ -17,7 +17,11 @@ export default class UserModule extends VuexModule {
 
   @Action({ commit: 'setLooList' })
   async fetchLooList(): Promise<Array<LooListModel>> {
-    const LooList = await new FetchLooService().fetchNearestLoo();
-    return LooList;
+    try {
+      const LooList = await new FetchLooService().fetchNearestLoo();
+      return LooList;
+    } catch (err) {
+      throw err;
+    }
   }
 }

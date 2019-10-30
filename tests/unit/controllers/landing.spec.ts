@@ -24,7 +24,7 @@ describe('Landing.vue', () => {
       gender: 'Ladies',
       levelName: 'The Blue Room',
       location: 'East end, opposite Target',
-      isAvailable: true,
+      isAvailable: 'Y',
     },
     {
       id: 2,
@@ -32,7 +32,7 @@ describe('Landing.vue', () => {
       gender: 'Mens',
       levelName: 'The Blue Room',
       location: 'East end, opposite Target',
-      isAvailable: true,
+      isAvailable: 'Y',
     },
     ],
   };
@@ -73,5 +73,47 @@ describe('Landing.vue', () => {
     });
     (wrapper.vm as any).resetUserSelection();
     expect(wrapper.vm.$data.isActive).to.eq(false);
+  });
+  it('tests the fetch user list', () => {
+    const wrapper = shallowMount(Landing, {
+      store,
+      localVue,
+    });
+    wrapper.vm.$data.usersList = [];
+    (wrapper.vm as any).fetchUserList();
+    expect(wrapper.vm.$data.usersList.length).to.eq(4);
+  });
+  it('tests the selectedUserAmenities function', () => {
+    const wrapper = shallowMount(Landing, {
+      store,
+      localVue,
+    });
+    const element = {
+      titleName: 'Ladies',
+      isActive: false,
+    };
+    (wrapper.vm as any).selectedUserAmenities(element);
+    const expectedResponse = [{
+      level: 'Level1',
+      levelName: 'The Blue Room',
+      isAvailable: true,
+      location: [
+        {
+          location: 'East end, opposite Target',
+          isAvailable: 'Y',
+          locationList: [
+            {
+              id: 1,
+              level: 'Level1',
+              gender: 'Ladies',
+              levelName: 'The Blue Room',
+              location: 'East end, opposite Target',
+              isAvailable: 'Y',
+            },
+          ],
+        },
+      ],
+    }];
+    expect(wrapper.vm.$data.groupedLooList).to.deep.equal(expectedResponse);
   });
 });
