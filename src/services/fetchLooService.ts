@@ -3,7 +3,7 @@ import { LooListModel } from '@/models/looListModel';
 import axiosInstance from './axiosInstance';
 
 
-export default class FetchLooService {
+class FetchLooService {
   private looList : Array<LooListModel> = [];
 
   /**
@@ -19,3 +19,4 @@ export default class FetchLooService {
     return this.looList;
   }
 }
+export default new FetchLooService();

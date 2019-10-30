@@ -7,16 +7,16 @@ import sinon from 'sinon';
 import Vuex from 'vuex';
 import VueRouter from 'vue-router';
 import Landing from '@/views/looLanding.vue';
+import FetchLooService from '@/services/fetchLooService';
 
 const localVue = createLocalVue();
 localVue.use(Vuex);
 localVue.use(VueRouter);
 
-describe('Landing.vue', () => {
+describe('Landing.vue success flow', () => {
   let actions;
   let store : any;
   let looList : any[] = [];
-  let login;
   const listJson = {
     LooList: [{
       id: 1,
@@ -115,5 +115,37 @@ describe('Landing.vue', () => {
       ],
     }];
     expect(wrapper.vm.$data.groupedLooList).to.deep.equal(expectedResponse);
+  });
+});
+describe('Landing.vue error flow', () => {
+  let actions;
+  let store : any;
+  let looList : any[] = [];
+  let login;
+  beforeEach(() => {
+    actions = {
+      fetchLooList: sinon.stub().throws('error'),
+    };
+    looList = [];
+    const looListModule = {
+      namespaced: true,
+      state: {
+        looList,
+      },
+      actions,
+    };
+    store = new Vuex.Store({
+      modules: {
+        looListModule,
+      },
+    });
+  });
+  it('tests the service failure scenario', () => {
+    const wrapper = shallowMount(Landing, {
+      store,
+      localVue,
+    });
+    sinon.stub(FetchLooService, 'fetchNearestLoo').throws('error');
+    expect(wrapper.vm.$data.errorMessage).to.eq('Oops..Something went wrong. Please try again after sometime.');
   });
 });

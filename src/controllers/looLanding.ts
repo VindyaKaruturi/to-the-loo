@@ -20,7 +20,9 @@ import constants from '@/constants';
   },
 })
 export default class Landing extends Vue {
-  /** variables declaration */
+  /**
+   * variables declaration
+  */
   private constants = constants;
 
   private isActive: boolean = false;
@@ -37,7 +39,9 @@ export default class Landing extends Vue {
 
   private errorMessage: string = '';
 
-  /** fetch the loo list near to location */
+  /**
+   * fetch the loo list near to location
+  */
   private async created() {
     this.fetchUserList();
     try {
@@ -52,7 +56,9 @@ export default class Landing extends Vue {
     this.loadContent = true;
   }
 
-  /** User list declaration */
+  /**
+   * User list declaration
+  */
   private fetchUserList() {
     const userList = constants.landing.USERS_LIST;
     userList.forEach((user) => {
