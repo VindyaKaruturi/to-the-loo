@@ -59,7 +59,7 @@
          <azj-button :buttonText="constants.landing.BUTTON_TEXT"
             :isDisabled = "!isActive" :btnClick="showWay">
          </azj-button>
-         <div class="amenities">
+         <div class="amenities" :class="isActive ? 'background-img' : ''">
             <div class="amenities-text pt-2">{{amenitiesLabel}}</div>
             <div class="amenities-div" v-for= "(amenity,index) in groupedLooList" :key="index">
                <Amenities :showUpdate="isActive" :amenityDetails="amenity"></Amenities>

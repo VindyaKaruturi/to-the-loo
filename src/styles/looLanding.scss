@@ -73,8 +73,14 @@
 }
 .landing .amenities-div{
     margin: auto;
-    width: 95%;
+    width: 95%;    
     margin-bottom: 10px;
     text-align: center;
     background: white;
+}
+.landing .background-img{
+    background-image: url('../assets/background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40em;
 }
