@@ -7,7 +7,8 @@ class FetchLooService {
   private looList : Array<LooListModel> = [];
 
   /**
-   * Fetches complete loolist irrespective of gender.
+   * Fetches complete loolist irrespective of gender from the database
+   * Currently using Json to fetch the data.
    */
   public async fetchNearestLoo() : Promise<Array<LooListModel>> {
     try {

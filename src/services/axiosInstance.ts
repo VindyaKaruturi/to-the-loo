@@ -2,7 +2,7 @@ import axios from 'axios';
 import Constants from '@/constants';
 
 /**
- * Created an instance for the axios
+ * Created an instance for the axios for http calls
  */
 class AxiosInstance {
   public instance = axios.create({
