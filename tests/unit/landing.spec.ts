@@ -6,7 +6,7 @@ import {
 import sinon from 'sinon';
 import Vuex from 'vuex';
 import VueRouter from 'vue-router';
-import Landing from '@/views/landing.vue';
+import Landing from '@/views/looLanding.vue';
 
 const localVue = createLocalVue();
 localVue.use(Vuex);
