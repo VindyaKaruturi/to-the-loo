@@ -1,0 +1,86 @@
+
+.landing .heading {
+    color: $primaryColor;
+    font-size: 30px;
+}
+.landing .title-border {
+    border: 1px solid #00a99d5e;
+    position: absolute;
+    top: 82px;
+    @include xs {
+        left: 12px;
+    }
+    @include sm {
+        left: 16px;
+    }
+    @include md {
+        left: 61px;
+    }  
+    @include lg{
+        left: 93px;
+    }
+    @include xl{
+        left: 136px;
+    }
+    @include xxl {
+        left: 153px;
+    }
+    border-radius: 50%;
+    height: 65px;
+    width: 65px;
+    box-shadow: 3px 0px 0px 0px #00a99d5e;
+}
+.landing .title {
+    font-weight: medium;
+    font-size: 14px;
+    margin-top: 1.5em;
+    color: $primaryColor;
+}
+.landing .title-isActive {
+    color: #fff;
+}
+.landing .title-border-isActive{
+    background-color: $primaryColor;
+    box-shadow: 3px 0px 0px 0px $primaryColor;
+    border: 1px solid $primaryColor;
+}
+.landing .img{
+    position: relative;
+}
+.landing .col{
+    padding: 9px;
+    height: 9em;
+}
+.landing .row{
+    margin-top:1em;
+    margin-left: 1px;
+    margin-right: 1px;
+}
+.landing .msg{
+    color: $textcolor;
+    font-size: 16px;
+}
+.landing .amenities{
+    background-color: rgba(0,169,157,0.15);
+    margin-top: 1em;
+    padding-bottom: 1em;
+}
+.landing .amenities-text{
+    text-align: left;
+    font-size: 20px;
+    margin: 0.5em;
+    color: $textcolor;
+}
+.landing .amenities-div{
+    margin: auto;
+    width: 95%;    
+    margin-bottom: 10px;
+    text-align: center;
+    background: white;
+}
+.landing .background-img{
+    background-image: url('../assets/background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40em;
+}
