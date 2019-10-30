@@ -1,0 +1,92 @@
+{ 
+   "LooList":[ 
+      { 
+         "id":1,
+         "level":"Level1",
+         "levelName":"the blue room",
+         "isAvailable":"Y",
+         "gender":"Ladies",
+         "location":"East end, opposite Target"
+      },
+      { 
+         "id":2,
+         "level":"Level1",
+         "levelName":"the blue room",
+         "isAvailable":"Y",
+         "gender":"Mens",
+         "location":"East end, opposite Target"
+      },
+      { 
+         "id":3,
+         "level":"Level1",
+         "levelName":"the blue room",
+         "isAvailable":"Y",
+         "gender":"Accessible",
+         "location":"East end, opposite Target"
+      },
+      { 
+         "id":4,
+         "level":"Level2",
+         "levelName":"the green room",
+         "isAvailable":"Y",
+         "gender":"Ladies",
+         "location":"West end, outside myer"
+      },
+      { 
+         "id":5,
+         "level":"Level2",
+         "levelName":"the green room",
+         "isAvailable":"Y",
+         "gender":"Mens",
+         "location":"West end, outside myer"
+      },
+      { 
+         "id":6,
+         "level":"Level2",
+         "levelName":"the green room",
+         "isAvailable":"Y",
+         "gender":"Accessible",
+         "location":"West end, outside myer"
+      },
+      { 
+         "id":7,
+         "level":"Level1",
+         "levelName":"the blue room",
+         "isAvailable":"Y",
+         "gender":"Parents",
+         "location":"East end, near Target"
+      },
+      { 
+         "id":8,
+         "level":"Level2",
+         "levelName":"the green room",
+         "isAvailable":"N",
+         "gender":"Parents",
+         "location":"West end, opposite myer"
+      },
+      { 
+         "id":9,
+         "level":"Level3",
+         "levelName":"the yellow room",
+         "isAvailable":"Y",
+         "gender":"Ladies",
+         "location":"Nort Side, Next to optus"
+      },
+      { 
+         "id":10,
+         "level":"Level3",
+         "levelName":"the yellow room",
+         "isAvailable":"Y",
+         "gender":"Mens",
+         "location":"Nort Side, Next to optus"
+      },
+      { 
+         "id":11,
+         "level":"Level3",
+         "levelName":"the yellow room",
+         "isAvailable":"Y",
+         "gender":"Accessible",
+         "location":"Nort Side, Next to optus"
+      }
+   ]
+}

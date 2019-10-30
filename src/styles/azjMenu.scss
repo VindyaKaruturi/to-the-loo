@@ -1,0 +1,60 @@
+.sidenav {
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0; 
+  background-image: url('../assets/Tile_Background.png');
+  overflow-x: hidden;
+  background-color: white;
+  transition: 0.3s;  
+  padding-top: 60px;
+}
+.sidenav .background{
+  background-color: white;
+}
+.sidenav .amenities-text{
+  font-size: 20px;
+  color: $textcolor;
+  text-align: left;
+  font-weight: bold;
+}
+.sidenav .img {
+  text-align: right;
+  height: 21px;
+  cursor: pointer;
+}
+.menu {
+  text-align: right;
+  font-size: 40px;
+  cursor: pointer;
+  height: 10px;
+  color: $primaryColor;
+}
+
+.sidenav .content{
+    font-size: 20px;
+    color: $textcolor;
+    text-align: center;
+    font-weight: 700;
+    margin: auto;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+.show-content {
+  width: 100%;
+}
+.hide-content {
+  width: 0%;
+}
+.sidenav .title {
+  color: $primaryColor;
+  font-size: 30px;
+  text-align: center;
+}
