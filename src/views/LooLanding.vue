@@ -1,9 +1,11 @@
 <template>
    <div class="landing">
+      <!-- Spinner component -->
       <div v-if="!loadContent" class="d-flex justify-content-center mt-3">
          <azj-spinner></azj-spinner>
       </div>
       <div v-if="loadContent">
+         <!-- Error Message component -->
          <div v-if="errorMessage">
             <div class="heading">
                {{constants.landing.MAIN_TEXT}}
@@ -11,10 +13,11 @@
             <azj-error-component :message="constants.ERROR_MESSAGE"></azj-error-component>
          </div>
          <div v-else>
+            <!-- Menu component -->
             <div class="menu mr-2">
-                  <azj-menu ref="sidemenu" :userList="usersList"
+               <azj-menu ref="sidemenu" :userList="usersList"
                   @selectedUser="selectAmenities"></azj-menu>
-               </div>
+            </div>
                <div class="heading"
                   v-on:click = "resetUserSelection()">{{constants.landing.MAIN_TEXT}}
                </div>
@@ -56,6 +59,7 @@
                   </div>
                </div>
                <div class="mt-1 pt-2">{{constants.landing.MESSAGE}}</div>
+               <!-- Button Component -->
                <azj-button :buttonText="constants.landing.BUTTON_TEXT"
                   :isDisabled = "!isActive" :btnClick="showWay">
                </azj-button>
