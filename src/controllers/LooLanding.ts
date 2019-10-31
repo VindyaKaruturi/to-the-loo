@@ -75,10 +75,11 @@ export default class Landing extends Vue {
     this.loadContent = false;
     this.amenitiesLabel = `${selectedGender.titleName} ${this.constants.landing.ROOM_AMENITIES}`;
     this.usersList.forEach((ele) => {
-      if (ele.titleName === selectedGender.titleName) {
-        ele.isActive = true;
+      const eachUser: UserModel = ele;
+      if (eachUser.titleName === selectedGender.titleName) {
+        eachUser.isActive = true;
       } else {
-        ele.isActive = false;
+        eachUser.isActive = false;
       }
     });
     this.selectedUserAmenities(selectedGender);
@@ -110,7 +111,8 @@ export default class Landing extends Vue {
   private resetUserSelection() {
     this.isActive = false;
     this.usersList.forEach((ele) => {
-      ele.isActive = false;
+      const eachUser: UserModel = ele;
+      eachUser.isActive = false;
     });
     this.looList = this.$store.state.looListModule.looList;
     this.groupedLooList = LandingService.groupLooData(this.looList);
