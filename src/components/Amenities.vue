@@ -3,7 +3,9 @@
         <div class="mainDiv" :class="amenityDetails.isAvailable ? '' : 'error-background'">
             <div class="level pt-2">
                 {{ amenityDetails.level }}
-                <span v-if="showUpdate"> _ {{ amenityDetails.levelName | capitalize }} </span>
+                <span class="levelName" v-if="showUpdate">
+                    _ {{ amenityDetails.levelName | capitalize }}
+                </span>
             </div>
             <div class="row py-1"
              v-for="(eachAmenity,index) in amenityDetails.location"
