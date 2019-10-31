@@ -1,5 +1,5 @@
 <template>
-    <div class="azjButton">
+    <div class="azj-button">
       <button class="button"
         :class="isDisabled ? '' : 'button-Active'"
         :disabled="isDisabled"

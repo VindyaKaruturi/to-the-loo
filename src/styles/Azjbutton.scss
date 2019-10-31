@@ -1,6 +1,6 @@
 
 
-.azjButton .button{
+.azj-button .button{
     height: 60px;
     width: 344px;
     margin-top: 1em;
@@ -10,7 +10,7 @@
     border-radius: 8px;
     border: #fff
 }
-.azjButton .button-Active{
+.azj-button .button-Active{
     background-color: $primaryColor;
 }
 button:active {
