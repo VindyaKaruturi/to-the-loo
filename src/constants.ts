@@ -13,6 +13,7 @@ class Constants {
     AVAILABLE_TEXT: 'Stalls available- *Live Update',
     UNAVAILABLE_TEXT: '*Unavailable - Closed for cleaning',
     AMENITIES_PROVIDED: 'Amenities Provided',
+    TOILETS: 'toilets',
   };
 
   public API_BASE_URL = window.location.href;

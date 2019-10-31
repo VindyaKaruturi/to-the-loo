@@ -67,6 +67,7 @@
                   <div class="amenities-text pt-2">{{amenitiesLabel}}</div>
                   <div class="amenities-div"
                   v-for= "(amenity,index) in groupedLooList" :key="index">
+                  <!-- Rendering Amenities component -->
                      <Amenities :showUpdate="isActive" :amenityDetails="amenity"></Amenities>
                   </div>
                </div>

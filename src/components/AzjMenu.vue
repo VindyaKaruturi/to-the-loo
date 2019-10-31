@@ -38,7 +38,7 @@
                     width="64px"
                   />
                </div>
-               <div class="content ml-1">{{item.titleName}} toilets</div>
+               <div class="content ml-1">{{item.titleName}} {{constants.amenities.TOILETS}}</div>
                 </div>
             </div>
             <div class="d-flex d-flex-row mt-5 ml-4 pb-3" @click="showHideNavBar">
