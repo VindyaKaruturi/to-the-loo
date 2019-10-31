@@ -3,28 +3,12 @@
     color: $primaryColor;
     font-size: 30px;
 }
+.landing .title-div{
+    position: absolute;
+    top:80px;
+}
 .landing .title-border {
     border: 1px solid #00a99d5e;
-    position: absolute;
-    top: 82px;
-    @include xs {
-        left: 12px;
-    }
-    @include sm {
-        left: 16px;
-    }
-    @include md {
-        left: 61px;
-    }  
-    @include lg{
-        left: 93px;
-    }
-    @include xl{
-        left: 136px;
-    }
-    @include xxl {
-        left: 153px;
-    }
     border-radius: 50%;
     height: 65px;
     width: 65px;

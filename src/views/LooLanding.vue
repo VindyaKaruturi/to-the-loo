@@ -42,7 +42,7 @@
                         width="90"
                         height="90"/>
                      </div>
-                     <div>
+                     <div class="title-div">
                         <div class="title-border"
                            :class="item.isActive ? 'title-border-isActive' : ''">
                            <p class="title"
