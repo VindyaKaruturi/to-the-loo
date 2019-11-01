@@ -1,54 +1,51 @@
-
-
-
-.amenities-component .level{
-    color: $textcolor;
-    text-align: left;
-    font-size: 18px;
-    margin: 0.5em;
-    font-weight: bold;
+.amenities-component .level {
+  color: $text-color;
+  text-align: left;
+  font-size: 18px;
+  margin: 0.5em;
+  font-weight: bold;
 }
-.amenities-component .row{
-    margin: auto;
-    margin-bottom: 1em;    
+.amenities-component .row {
+  margin: auto;
+  margin-bottom: 1em;
 }
-.amenities-component .coloum{
-    text-align: left;
-    display: inline-block;
-    align-items: center;
+.amenities-component .coloum {
+  text-align: left;
+  display: inline-block;
+  align-items: center;
 }
-.amenities-component .location{
-    font-weight: 900;
-    font-size: 16px;
-    color: $textcolor;
-    line-height: 24px;    
+.amenities-component .location {
+  font-weight: 900;
+  font-size: 16px;
+  color: $text-color;
+  line-height: 24px;
 }
-.amenities-component .update-text{
-    font-weight: 500;
-    font-size: 14px;
-    color: $textcolor;
-    line-height: 21px; 
+.amenities-component .update-text {
+  font-weight: 500;
+  font-size: 14px;
+  color: $text-color;
+  line-height: 21px;
 }
-.amenities-component .separator{
-    height: 1px;
-    width: 150px;
-    color: $primaryColor;
-    border: 1.2px solid $primaryColor;
+.amenities-component .separator {
+  height: 1px;
+  width: 150px;
+  color: $primary-color;
+  border: 1.2px solid $primary-color;
 }
-.amenities-component .btn-see-amenity{
-    background: none;
-    border: none;
-    font-size: 18px;
-    color: $primaryColor;
-    font-weight: bold;
+.amenities-component .btn-see-amenity {
+  background: none;
+  border: none;
+  font-size: 18px;
+  color: $primary-color;
+  font-weight: bold;
 }
-.amenities-component .amenity-align{
-    display: flex;
-    align-items: left;
+.amenities-component .amenity-align {
+  display: flex;
+  align-items: left;
 }
-.amenities-component .error-background{
-    background-color: $errorBackground;
+.amenities-component .error-background {
+  background-color: $error-background;
 }
-.amenities-component .error-msg-color{
-    color: $errorMessage;
+.amenities-component .error-msg-color {
+  color: $error-message;
 }

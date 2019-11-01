@@ -1,11 +1,9 @@
-
-
 #app {
-    font-family: $fontFamily;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-align: center;
+  font-family: $font-family;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
 }
 button {
-    cursor: pointer;
+  cursor: pointer;
 }

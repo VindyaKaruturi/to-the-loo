@@ -1,19 +1,19 @@
-
-
-.azj-button .button{
-    height: 60px;
-    width: 344px;
-    margin-top: 1em;
-    color: white;
-    font-weight: 500;
-    font-size: 30px;
-    border-radius: 8px;
-    border: #fff
+.azj-button .button {
+  height: 60px;
+  width: 344px;
+  margin-top: 1em;
+  color: white;
+  font-weight: 500;
+  font-size: 30px;
+  border-radius: 8px;
+  border: #fff;
 }
-.azj-button .button-Active{
-    background-color: $primaryColor;
+.azj-button .button-Active {
+  background-color: $primary-color;
 }
 button:active {
-    outline: 0 !important;
+  outline: 0 !important;
 }
-button:focus {outline:0 !important;}
+button:focus {
+  outline: 0 !important;
+}
